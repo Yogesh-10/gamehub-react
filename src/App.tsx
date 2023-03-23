@@ -7,12 +7,8 @@ function App() {
       <GridItem area='nav'>
         <NavBar />
       </GridItem>
-      <GridItem area='aside' bg='gold'>
-        Aside
-      </GridItem>
-      <GridItem area='main' bg='blue'>
-        Main
-      </GridItem>
+      <GridItem area='aside'>Aside</GridItem>
+      <GridItem area='main'>Main</GridItem>
     </Grid>
   );
 }
