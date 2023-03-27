@@ -5,6 +5,7 @@
 //We can modify this url to change the crop size by adding crop/600/400 - https://api.rawg.io/media/crop/600/400/games/456/456dea5e1c7e3cd07060c14e96612001.jpg
 
 const getCroppedImageUrl = (url: string) => {
+  if (!url) return '';
   const target = 'media/';
   const index = url.indexOf(target) + target.length;
   return url.slice(0, index) + 'crop/600/400/' + url.slice(index);
